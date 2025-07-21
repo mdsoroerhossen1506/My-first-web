@@ -106,7 +106,48 @@ main{
 .banner-img{
     width: 100%;
 }
+/* features section related styles */
+#features-section-title-1{
+    border-left:5px solid rgba(255, 144, 14, 1); 
+    padding-left: 20px;
 
+}
+.features-card{
+    box-shadow: 0 4px 4px 0  rgba(0, 0, 0, 0.25);
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+
+}
+.features-card .features-title{
+    font-weight: 600;
+    font-size: 1.25;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    
+}
+.features{
+    gap:145px ;
+}
+#experience-badg{
+    padding: 42px 45px;
+    font-weight: 500;
+    font-size: 1.55rem;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.architect-img img{
+    width: 100%;
+}
+/* .experience{
+    font-size: 1.5rem;
+    font-weight: 600;
+} */
 /* features */
 .teams{
     align-items: center;
@@ -162,7 +203,35 @@ main{
     margin-top: 10px;
     
 }
+/* our sponspors */
+.sponspors-section{
+    max-width: 540px;
+    margin:50px auto ;
+    text-align: center;
+}
+.sponspors-companies{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    
+}
+.sponspors-companies img{
+    filter: grayscale(100%);
+}
+/*  footer dest*/
+.footer-dest{
 
+    width: 1440px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: rgba(255, 244, 231, 1);
+    border-radius: 8px;
+    /* text-align: center; */
+     justify-content: center;
+    align-items: center;
+    margin-top: 143px;
+    margin-bottom: 100px;
+}
 
 
 
@@ -172,7 +241,7 @@ main{
 
 
 @media screen and (max-width:576px){
-    .navber,.nsv-links,.teams{
+    .navber,.nsv-links,.features, .teams{
         flex-direction: column;
     }
     .team-img-container{
@@ -180,5 +249,53 @@ main{
         grid-template-columns:repeat(1, 1fr);
         /* gap: 16px; */
     }
+    .facts-container, .sponspors-companies{
+        grid-template-columns: repeat(1,1fr);
+        justify-items: center;
+        gap: 20px;
+    }
+    .sponspors-companies{
+        gap: 30px;
+    }
+    #experience-badg{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .footer-dest{
+        max-width: 100%;
+    }
     
 }
+/* medim size device */
+@media screen and (min-width: 576px) and (max-width:992px){
+    .teams{
+        flex-direction: column;
+    }
+    .our-features{
+
+        margin: 50px auto;
+    }
+    .sponspors-companies{
+        grid-template-columns: repeat(3,1fr);
+        gap: 50px;
+        
+    }
+    .facts-container{
+        grid-template-columns: repeat(3,1fr);
+        gap: 20px;
+    
+    }
+    #experience-badg{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .features{
+        flex-direction: column;
+    }
+    .footer-dest{
+        max-width: 100%;
+    }
+    
+   
+}
+ 
