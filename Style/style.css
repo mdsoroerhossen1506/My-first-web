@@ -73,10 +73,10 @@ main{
     align-items: center;
 
 }
-.nsv-links{
+/* .nsv-links{
 
     
-}
+} */
 .nav-item{
     list-style: none;
     /* gap: 20px; */
@@ -169,7 +169,7 @@ main{
 }
 .features-descriptio{
     font-size: 1rem;
-    font-weight: ;
+    /* font-weight:  */
 }
 /*  */
 .Facts-descriptio{
